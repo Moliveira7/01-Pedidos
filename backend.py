@@ -4,8 +4,19 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/submit_order', methods=['POST'])
+@app.route('/submit_order', methods=['POST', 'OPTIONS'])
 def submit_order():
+    if request.method == 'OPTIONS':
+        response = app.response_class(
+            response=json.dumps({'status': 'success'}),
+            status=200,
+            mimetype='application/json'
+        )
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
+        response.headers.add('Access-Control-Allow-Methods', 'POST')
+        return response
+
     try:
         data = request.get_json()
 

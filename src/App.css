@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("./assets/img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.app-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo para o quadrado com bordas pretas */
+.input-container {
+  background-color: #ffffff; /* Cor de fundo branca */
+  border: 2px solid #000000; /* Borda preta */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 10px; /* Borda arredondada */
+}
+
+/* Cor complementar para os campos de input */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+/* Cor complementar para os campos de input */
+input {
+  width: 50%; /* Largura dos inputs */
+  margin-bottom: 10px;
+  padding: 10px; /* Espaçamento interno dos campos de input */
+  box-sizing: border-box; /* Garante que o padding não aumente o tamanho total do input */
+  background-color: #006bb6; /* Cor complementar */
+  color: #fff; /* Texto em branco para contraste */
+  border: 1px solid #006bb6; /* Borda na mesma cor do fundo */
+}
+.form-payment-container {
+    display: flex;
+    align-items: center;
+  }
+  /* Estilo para a label */
+.form-payment-label {
+    margin-right: 10px; /* Adicione espaço à direita da label */
+  }
+
+select {
+    margin-bottom: 10px; /* Adicione espaço vertical abaixo do select */
+}
+
+button {
+  margin-top: 70px;
+  width: 100%;  
+  padding: 10px;
+  background-color: #f6c000; /* Cor de fundo do botão */
+  color: #000; /* Cor do texto do botão */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* Estilo para os campos de input com width de 80% */
+.wide-input {
+    width: 100%;
+  }
